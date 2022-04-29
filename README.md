@@ -24,7 +24,8 @@ docker build . -t imagename
 ## Run a command 
 
 ```
-docker run -it imagename python3 # Running python3 in a new container
+# Running python3 in a new container
+docker run -it imagename python3 
 ```
 
 ## Run a command sharing your files
@@ -32,5 +33,6 @@ docker run -it imagename python3 # Running python3 in a new container
 Useful when you need to share your code with the container
 
 ```
-docker run -it -v $(pwd):/usr/src/app imagename your_command # Running your_command in a new container and sharing the folder files
+# Running your_command in a new container and sharing the folder files
+docker run -it -v $(pwd):/usr/src/app imagename your_command 
 ```
