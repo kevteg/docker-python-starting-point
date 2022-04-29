@@ -18,13 +18,13 @@ notion-client
 This step will install all your requirements in your image
 
 ```
-docker build . -t imagename
+docker build . -t imagename 
 ```
 
 ## Run a command 
 
 ```
-docker run -it imagename python3
+docker run -it imagename python3 # Running python3 in a new container
 ```
 
 ## Run a command sharing your files
@@ -32,5 +32,5 @@ docker run -it imagename python3
 Useful when you need to share your code with the container
 
 ```
-docker run -it -v $(pwd):/usr/src/app imagename your_command
+docker run -it -v $(pwd):/usr/src/app imagename your_command # Running your_command in a new container and sharing the folder files
 ```
