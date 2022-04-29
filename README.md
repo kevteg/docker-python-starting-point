@@ -1,4 +1,4 @@
-# docker-python-starting-point 🐳
+# docker-python-starting-point 🐳 🐍
 
 The idea of this project is to be a template for Python projects with Docker
 
